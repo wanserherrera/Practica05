@@ -1,0 +1,292 @@
+.decor{
+    margin-top: 8rem;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/contact-welcome.png) center center no-repeat;
+    background-size: cover;
+}
+.decor__tittle{
+    margin: 0.5rem auto;
+    font-size: 2.75rem;
+    line-height: 4.625rem;
+    letter-spacing: 0.04rem;
+    color: #ffffff;
+    text-align: center;
+}
+.decor__subtittle{
+    padding: 0 2rem;
+    margin: 0.5rem auto;
+    font-size: 1.25rem;
+    line-height: 1.875;
+    color: #ffffff99;
+    max-width: 48.75rem;
+    text-align: center;
+}
+
+/*-------------------------------------- CONTACT_BODY */
+.contact-body__container{
+    margin: 3.6rem 13.3rem 0rem 13.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-body__info{
+    display: flex;
+    flex-direction: column;
+}
+.contact-body__info-item{
+    
+}
+.info__tittle{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+.info-row{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.info-row .material-icons{
+    width: 2.3rem;
+}
+.info__subtittle{
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #1F3F68;
+    max-width: 18.75rem;
+}
+
+/*----------------------------------------- FORM */
+.contact-body__form{
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 3.5rem;
+    margin-left: 3rem;
+    width: 33.75rem;
+}
+.form-tittle{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    line-height: 0.04rem;
+    color: #1F3F68;
+    padding-bottom: 3rem;
+}
+.input-wrapper{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-wrapper__input{
+    padding: 1.3rem 2.65rem;
+    margin: 0.5rem 0 2rem 0;
+    border: 1px solid #356EAD;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+.input-wrapper__input:focus, .input-wrapper__input:hover{
+    box-shadow: 0 0 5px #000000;
+}
+.btn-form{
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    color: #ffffff;
+    width: 100%;
+    border: 1px solid #5A98D0;
+    margin-top: 1.5rem;
+}
+.btn-form:hover{
+    background-color: transparent;
+    color: #5A98D0;
+    box-shadow: 0 0 10px #5A98D0;
+}
+.contact-map{
+    padding: 6rem 13.3rem;
+}
+.map{
+    width: 100%;
+}
+.footer{
+    background-color: #ffffff;
+}
+
+
+/* REPONSIVE */
+@media(max-width: 1200px){
+    .contact-body__container{margin: 3.6rem 10rem 0rem 10rem;}
+}
+@media (max-width: 992px) { 
+    .contact-body__container{margin: 3.6rem 3rem 0rem 3rem;}
+    .contact-body__container{
+        flex-direction: column;
+    }
+    .contact-body__info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .contact-body__form{
+        width: 90%;
+    }
+    .contact-map{
+        padding: 6rem 6rem;
+    }
+}
+
+
+/*  -------------------------------------------BLOG ARITCLE */
+/*  -------------------------------------------BLOG ARITCLE */
+/*  -------------------------------------------BLOG ARITCLE */
+/*  -------------------------------------------BLOG ARITCLE */
+/*  -------------------------------------------BLOG ARITCLE */
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+/* SEARCH BOX */
+.blog-body{
+    padding: 0rem 13.3rem;
+}
+
+.blog-body__search-box{
+    padding: 3.5rem 0;
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    background: #F4F4F4;
+    border-radius: 10px;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+.search-box .material-icons{
+    padding: 1.2rem 1.7rem;
+}
+.search-box__input{
+    flex-grow: 1;
+    background: none;
+    border: none;
+    padding: 1.2rem 2rem 1.2rem 0;
+}
+/* --------------------------------------ARTICE*/
+.div__tittle{
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+    color: #356EAD;
+    opacity: 0.8;
+}
+.article{
+    margin-bottom: 1rem;
+}
+.article__text{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.article__tittle{
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    letter-spacing: 0.04rem;
+    color: #1F3F68;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.article__subtittle{
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.04rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.article__footer{
+    align-items: center;
+    column-gap: 6.3rem;
+    justify-content: flex-start;
+}
+.article__footer-author{
+    font-size: 0.875rem;
+    color: #1F3F68;
+    line-height: 1.5rem;
+    padding-bottom: 0.25rem;
+}
+.article__footer-date{
+    font-size: 0.875rem;
+    letter-spacing: 0.04rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+.article__footer-function{
+    display: flex;
+    column-gap: 2.375rem;
+}
+.article__footer-function i{
+    color: #356EAD;
+    cursor: pointer;
+}
+
+/* --------------------------------------POPULAR */
+.popular-article{ 
+    width: 18.75rem;
+    margin-bottom: 2rem;
+}
+.popular-row{
+    column-gap: 1rem;
+}
+.popular__main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.25rem;
+}
+.popular__main .article__text{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular__main .article__tittle{
+    font-size: 3rem;
+    line-height: 3.625rem;
+}
+.popular__footer h3{
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    opacity: 0.8;
+    padding-bottom: 1.5rem;
+}
+.popular__footer hr{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 3.5rem;
+}
+.popular__article .article__img{
+    padding-bottom: 1rem;
+}
+
+/* --------------------------------------ALL ARTICLE */
+
+.pagination__new, .pagination__old{
+    display: flex;
+    align-items: center;
+    color: #356EAD;
+    margin: 3rem 0 6rem 0;
+    cursor: pointer;
+}
+.pagination__new:hover span, .pagination__old:hover span{
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+@media(max-width: 1200px){
+
+}
+@media (max-width: 992px) { 
+    
+}

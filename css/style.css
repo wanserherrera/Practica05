@@ -1,0 +1,188 @@
+/* THIS CSS FOR HEADER AND NAVBAR */
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Gilroy',sans-serif ;
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+}
+
+/* aqui se hizo el header y el nav var */
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5.4rem 0 5.2rem;
+    height: 8rem;
+}
+.nav-bar__logo{
+    cursor: pointer;
+}
+.nav-bar__menu{
+    color: #356EAD;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------- FOOTER */
+.footer{
+    background-color: #5A98D0;
+    padding-right: 6rem;
+}
+.footer__container{
+    background-color: #316099;
+    border-radius: 0px 200px 0px 0px;
+    padding-right: 12.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer__talk{
+    padding: 5.7rem 0  5.7rem 13.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff ;
+}
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footer__text-tittle{
+    color: white;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+}
+.footer__text-subtittle{
+    color: #ffffff;
+    opacity: 0.6;
+    line-height: 1.625;
+    max-width: 29rem;
+}
+.btn{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.btn-light-blue{
+    padding: 1rem 4.7rem;
+    background-color: #5A98D0;
+    color: #ffffff;
+    border: 1px solid #5A98D0;
+    margin: 2rem 0;
+}
+.btn-light-blue:hover{
+    background-color: transparent;
+    box-shadow: 0 0 10px #5A98D0;
+
+}
+
+
+.footer__info{
+    display: flex;
+    padding: 6.5rem 0 4rem 13.3rem;
+    justify-content: space-between;
+}
+.footer__info-address{
+    max-width: 17.5rem;
+}
+.footer__info-logo{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.footer__info-contact{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    row-gap: 1.5rem;
+}
+.contact-item{
+    display: flex;
+}
+.contact-item>p{
+    min-width: 2rem;
+}
+.footer__info-about, .footer__info-follow{
+    min-width: 15rem;
+}
+.footer__info-tittle{
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+.footer__info-items{
+    list-style: none;
+}
+.footer__info-items li{
+    margin-bottom: 1rem;
+}
+.info-item{
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.info-item:hover{
+    color: coral;
+    text-decoration: underline;
+}
+
+.footer__location{
+    padding: 0 0 4rem 13.3rem;
+    color:#ffffff;
+    opacity: 0.4;
+}
+
+    /* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .footer__talk{padding-right: 2rem}
+}
+@media (max-width: 992px) { 
+    .footer, 
+    .footer__container{padding: 0}
+    .footer__talk,
+    .footer__info,
+    .footer__location{padding: 2rem;}
+}
+@media (max-width: 768px) {
+    .footer__talk,
+    .footer__info{flex-direction: column;}
+    .footer__info-address{
+        max-width: none;
+        padding-bottom: 2rem;
+    }
+    .footer__info-about, .footer__info-follow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__info-items{
+        width: 50%;
+        border-left: 1px solid #ffffff ;
+        padding: 0 0 1.5rem 1rem;
+    }
+}
+@media (max-width: 576px) { 
+    *{font-size: 10px;}
+    .footer__location{display: none;}
+}
